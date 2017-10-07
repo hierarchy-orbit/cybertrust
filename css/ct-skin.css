@@ -1,0 +1,1245 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+*{
+	---outline: 1px solid red;
+}
+
+body{
+	background: #efe9e9;
+	font: 14px "Lato", sans-serif;
+	color: #555;
+}
+
+.container-fluid{
+
+}
+
+.mini-perfil {
+	width: 50px; 
+	border-radius: 50%;
+	background: white;
+	padding: 2px;
+	margin-right: 5px;
+}
+
+#trigger-menu {
+    padding: 5px 10px;
+    color: #28b7e1;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 0px solid #28b7e1;
+    float: right;
+    margin: 10px -5px 0 0;
+    text-align: center;
+    display: none;
+    font-size: 24px;
+}
+
+#menu-mobile {
+    background: #12396f;
+    padding: 0;
+    position: fixed;
+    right: -480px;
+    top: 60px;
+    width: 250px;
+    z-index: 9;
+    height: 100vh;
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+}
+
+#menu-mobile ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+}
+
+#menu-mobile a {
+    color: #FFF;
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #1d4b8d;
+}
+
+#menu-mobile.activo {
+    right: 0;
+}
+
+nav{
+	background: rgba(27,68,150,.9);
+	background: #24559a;
+	padding: 0 20px;
+	height: 60px;
+	z-index: 9999;
+	position: relative;
+}
+
+.submenu, .footer-sitemap ul {
+	text-transform: none;
+}
+
+/*ul:not(.submenu):not(.footer-sitemap ul) > li {
+	text-transform: uppercase;
+}*/
+
+.pull-right > li {
+	text-transform: uppercase;
+}
+
+nav.fixed {
+	margin-top:0;
+	position: fixed;
+	top: 0;
+	transition: all ease-in-out 0.5s;
+	-webkit-transition: all ease-in-out 0.5s;
+	-moz-transition: all ease-in-out 0.5s;
+	width: 100%;
+}
+
+
+nav .brand{
+	width: 121px;
+	height: 36px;
+	color: transparent;
+	background:url(../img/home/logo-cybertrust.svg) no-repeat;
+	background-size: 100%;
+	margin-top: 7px;
+}
+
+nav ul{
+	display: table;
+	list-style: none;
+	border: none;
+
+}
+
+nav ul li{
+	display: table-cell;
+	padding: 20px 0;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 0;
+	height: 60px;
+	font: 400 14px "Lato";
+	border-bottom: 3px solid transparent;
+	text-decoration: none;
+	-webkit-transition: all .25s ease-in-out 0s;
+	   -moz-transition: all .25s ease-in-out 0s;
+	    -ms-transition: all .25s ease-in-out 0s;
+	     -o-transition: all .25s ease-in-out 0s;
+	        transition: all .25s ease-in-out 0s;
+}
+
+nav ul li:hover{
+	background: #2579b5;
+}
+
+nav ul li.active{
+	border-bottom: 1px solid #28b7e1;
+}
+
+nav ul li:hover a{
+	color: #28b7e1;
+}
+
+nav ul li a:link,
+nav ul li a:visited{
+	height: 60px;
+	padding: 20px 10px;
+	color: #FFF;
+	text-decoration: none;
+	-webkit-transition: all .25s ease-in-out 0s;
+	   -moz-transition: all .25s ease-in-out 0s;
+	    -ms-transition: all .25s ease-in-out 0s;
+	     -o-transition: all .25s ease-in-out 0s;
+	        transition: all .25s ease-in-out 0s;
+}
+
+nav ul li a.activo,
+nav ul li a:hover,
+nav ul li a:active{
+	text-decoration: none;
+}
+
+nav ul li:hover > .submenu{
+	display:block
+}
+
+nav ul li .submenu{
+	background: rgba(27,68,150,.9);
+	color: #FFF;
+	display: none;
+	z-index: 2;
+	height: auto;
+	margin-top: 23px;
+	margin-left: 0;
+	padding: 0;
+	position: absolute;
+}
+
+nav ul li > .submenu li{
+	padding: 0;
+	display: block;
+	margin: 0;
+	height: 32px;
+	outline: 0px solid blue;
+}
+
+
+nav ul li > .submenu li a{
+	width: 100%!important;
+	display: block;
+	outline: 0px solid red;
+	clear: both;
+	border-bottom: 0;
+	padding: 7px 10px 10px 10px;
+	height: 32px;
+}
+
+nav ul li > .submenu li a:hover{
+	border-bottom: 0!important;
+}
+
+
+nav ul li .submenu.up{
+	position: absolute;
+	bottom: 100%;
+}
+
+
+/*FOOTER*/
+
+footer{
+	background: #51545a;
+	padding: 20px 0;
+	color: #a8b3c6;
+	font-size: 13px;
+}
+
+footer .logo-footer{
+	background: url(../img/home/logo-footer.svg) no-repeat center center;
+	display: block;
+	height: 40px;
+	margin-bottom: 35px;
+	width: 130px;
+}
+
+footer .copyright p{
+	font-size: 12px;
+}
+
+footer .copyright ul{
+	margin-top: 70px;
+	padding-left: 0;
+}
+
+footer .copyright ul li{
+	line-height: 140%;
+}
+
+footer .footer-sitemap{
+	display: table;
+}
+
+footer .footer-sitemap ul{
+	display: table-cell;
+}
+
+footer ul li{
+	list-style: none;
+}
+
+footer .titulo-seccion{
+	font-weight: 700;
+}
+
+footer .titulo-seccion:after{
+	content: "";
+	width: 60px;
+	margin: 10px auto 10px 0;
+	border-bottom: 1px solid #9eb4c9;
+	display: block;
+}
+
+footer a{
+	font: 13px "Lato";
+	line-height: 140%;
+	font-weight: 300;
+	color: #a8b3c6;
+	-webkit-transition: all .25s ease-in-out 0s;
+	   -moz-transition: all .25s ease-in-out 0s;
+	    -ms-transition: all .25s ease-in-out 0s;
+	     -o-transition: all .25s ease-in-out 0s;
+	        transition: all .25s ease-in-out 0s;
+}
+
+footer a:hover{
+	color: #FFF;
+	text-decoration: none;
+}
+
+/*TITULOS*/
+h2{
+	font: 24px "Montserrat";
+	font-weight: 400;
+	color: #7b89a2;
+	width: auto;
+}
+
+h2:after{
+	content: "";
+	width: 60px;
+	margin: 15px auto 0 auto;
+	border-bottom: 1px solid #9eb4c9;
+	display: block;
+}
+
+h3{
+	font: 24px "Lato";
+	font-weight: 300;
+	border: 1px solid #7b89a2;
+	color: #7b89a2;
+}
+
+h4{
+	font: 700 24px/130% "Montserrat";
+	color: #1b4e96;
+	margin-bottom: 20px;
+}
+
+h5{
+	font: 700 16px "Lato";
+	color: #647c98;
+}
+
+h5 a {
+	color: #647c98;
+}
+
+.container-btn{
+	text-align: center;
+	margin-top: 40px;
+	clear: both;
+}
+
+.container-btn2{
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	clear: both;
+}
+
+.btn-ver-mas,
+.btn-ver-mas:visited{
+	color: #7b89a2;
+	border-color: #7b89a2;
+	font: 12px "Montserrat";
+	border-radius: 0;
+	-webkit-transition: all .25s ease-in-out 0s;
+	   -moz-transition: all .25s ease-in-out 0s;
+	    -ms-transition: all .25s ease-in-out 0s;
+	     -o-transition: all .25s ease-in-out 0s;
+	        transition: all .25s ease-in-out 0s;
+}
+
+.btn-ver-mas:hover,
+.btn-default:hover{
+	color: #1b4e96;
+	border-color: #1b4e96;
+}
+
+.btn-default{
+	background: #436184;
+	color: #FFF;
+	font: 14px "Montserrat";
+	border-radius: 0;
+	padding: 10px 20px;
+	-webkit-transition: all .25s ease-in-out 0s;
+	   -moz-transition: all .25s ease-in-out 0s;
+	    -ms-transition: all .25s ease-in-out 0s;
+	     -o-transition: all .25s ease-in-out 0s;
+	        transition: all .25s ease-in-out 0s;
+}
+
+
+/*HOME*/
+
+.home h3{
+	border: none;
+}
+
+.hero{
+	height: 595px;
+	background: url(../img/home/bg-hero.png) no-repeat center center #436184;
+	background-size: cover;
+}
+
+.hero h2{
+	text-align: center;
+	width: 650px;
+	margin: 20px auto;
+	color: #fff;
+}
+
+.hero h2:before{
+	content: "";
+	width: 60px;
+	margin: 30px auto;
+	border-bottom: 1px solid #9eb4c9;
+	display: block;
+}
+
+.hero h2:after{
+	display: none;
+}
+
+.hero .logo-hero{
+	width: 55px;
+	height: 90px;
+	display: block;
+	margin: 150px auto 20px auto;
+	background: url(../img/home/iso-cybertrust.svg) no-repeat center center;
+}
+
+.servicios,
+.valores{
+	padding: 60px 0;
+}
+
+.servicios{
+	background: #f9f7f7;
+}
+
+.ico__servicio{
+	width: 120px;
+	height: 120px;
+	margin: 30px auto 15px auto;
+}
+
+.ico__servicio--gob{
+	background: url(../img/iconos/ico-gobernabilidad.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+.ico__servicio--seg{
+	background: url(../img/iconos/ico-cyberseguridad.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+.ico__servicio--sust{
+	background: url(../img/iconos/ico-sustentabilidad.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+.servicios h2,
+.servicios h3{
+	text-align: center;
+}
+
+.servicio-item{
+	text-align: center;
+}
+
+.valores{
+	background: url(../img/home/bg-valores.png) no-repeat center left #e5e8ed;
+	height: 430px;
+}
+
+.valores-abstract{
+	margin-left: 500px;
+}
+
+.valores-abstract h2:after{
+	margin-left: 0;	
+}
+
+.valores-abstract .container-btn{
+	text-align: left;
+}
+
+
+/*VALORES*/
+.container-valores{
+	display: table;
+	table-layout: fixed;
+	float: left;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.container-valores .box-valor{
+	display: table-cell;
+	padding-right: 30px;
+}
+
+.ico__valor{
+	width: 80px;
+	height: 80px;
+	display: block;
+	margin: 0 auto 10px auto;
+}
+
+.ico__valor--confianza{
+	background: url(../img/iconos/ico-confianza.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+.ico__valor--pasion{
+	background: url(../img/iconos/ico-pasion.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+.ico__valor--innovacion{
+	background: url(../img/iconos/ico-innovacion.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+.ico__valor--integridad{
+	background: url(../img/iconos/ico-valor-integridad.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+.ico__valor--excelencia{
+	background: url(../img/iconos/ico-excelencia.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+
+
+
+/*INTERNAS*/
+.detalle nav{
+	margin-top: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.detalle .cenefa__interior{
+	height: 250px;
+	margin-top: 60px;
+}
+
+.detalle .cenefa__interior--servicios{
+	background: url(../img/cenefas/servicios.png) no-repeat center center;
+	background-size: cover;
+}
+
+.detalle .cenefa__interior--corporativo{
+	background: url(../img/cenefas/corporativo.png) no-repeat center center;
+	background-size: cover;
+}
+
+.detalle .cenefa__interior--socios{
+	background: url(../img/cenefas/socios.png) no-repeat center center;
+	background-size: cover;
+}
+
+.detalle .cenefa__interior h2{
+	text-align: center;
+	color: #28b7e1;
+	margin-top: 120px; 
+}
+
+.detalle .contenido{
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+.detalle .contenido h4 small{
+	color: #7b89a2;
+	display: block;
+	font-size: 16px;
+	line-height: 140%;
+}
+
+.detalle .contenido p,
+.detalle .contenido ul li{
+	line-height: 170%;
+}
+
+.detalle .contenido .destacado{
+	color: #7b89a2;
+	font-size: 24px;
+}
+
+.detalle .contenido .bajada{
+	color: #7b89a2;
+	font-size: 20px;
+}
+
+.detalle .contenido ul{
+	padding-left: 17px;
+}
+
+.detalle .medialuna{
+	width: 270px;
+	height: 270px;
+	display: block;
+	border-radius: 50%;
+	background: #efe9e9;
+	margin-top: -100px; 
+}
+
+.detalle .thumb__ico{
+	width: 160px;
+	height: 140px;
+	display: block;
+	margin: -205px 0 0 57px;
+	margin-top: -205px;
+}
+
+.detalle .thumb__ico--gobernabilidad{
+	background: url(../img/iconos/ico-gobernabilidad.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+.detalle .thumb__ico--cyberseguridad{
+	background: url(../img/iconos/ico-cyberseguridad.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+.detalle .thumb__ico--sustentabilidad{
+	background: url(../img/iconos/ico-sustentabilidad.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+.detalle .thumb__ico--integridad{
+	background: url(../img/iconos/ico-integridad.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+.detalle .thumb__ico--cyberacademia{
+	background: url(../img/iconos/ico-cyberacademia.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+.detalle .thumb__ico--crisis{
+	background: url(../img/iconos/ico-crisis.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+
+
+.detalle .img__socio{
+	display: block;
+	margin: -205px 0 0 10px;
+	margin-top: -205px;
+	width: 240px;
+	height: 507px;
+}
+
+.menu-secundario{
+	background: #e4dcdc;
+	padding: 20px;
+	margin-top: 20px;
+	width: 95%;
+	border-radius: 4px;
+	clear: both;
+}
+
+.menu-secundario h5{
+	margin-top: 0;
+}
+
+.detalle .contenido .menu-secundario ul{
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.detalle .contenido .menu-secundario ul li ul{
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.detalle .contenido .menu-secundario ul li ul li{
+	line-height: 120%;
+}
+
+.detalle .contenido .menu-secundario ul li ul li small{
+	display: block;
+	color: #666;
+	margin-left: 12px;
+}
+
+.detalle .contenido .menu-secundario ul li ul li:before{
+	content: "+ ";
+	display: block;
+	float: left;
+	width: 12px;
+	height: 12px;
+}
+
+.detalle .contenido .menu-secundario ul li{
+	line-height: 140%;
+	margin-bottom: 10px;
+}
+
+
+.detalle .contenido .box.cv{
+	display: none;
+}
+
+.detalle .contenido .tabs{
+	margin-bottom: 20px;
+}
+
+.detalle .contenido .tabs{
+	font-size: 14px;
+	font-weight:  bold;
+	list-style: none;
+	padding-left: 0;
+}
+
+.detalle .contenido .tabs li{
+	display: inline-block;
+	border-bottom: 3px solid transparent;
+	margin-right: 30px;
+	color: #acacac;
+	cursor: pointer;
+	-webkit-transition: all .25s ease-in-out 0s;
+	   -moz-transition: all .25s ease-in-out 0s;
+	    -ms-transition: all .25s ease-in-out 0s;
+	     -o-transition: all .25s ease-in-out 0s;
+	        transition: all .25s ease-in-out 0s;
+}
+
+.detalle .contenido .tabs li.active{
+	border-bottom: 3px solid #1b4e96;
+	color: #555;
+}
+
+
+/*CURSOS*/
+
+.botones-curso {
+	 width: 80%; 
+	 margin: 0 auto; 
+	 margin-top: 40px;
+	 position: relative;
+	 z-index:999;
+}
+
+.botones-curso a div {
+	background: #6b8dad;
+	width: 170px;
+	float: left;
+	color: white;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: bottom;
+}
+
+.botones-curso a:first-child div {
+	float: left;
+}
+
+.botones-curso a:last-child div {
+	float: right;
+}
+
+.relator {
+	vertical-align:middle;
+	display: inline-block;
+}
+.nombre__mes{
+	background: #CCC;
+	border-radius: 50%;
+	color: #333;
+	display: table;
+	padding-top: 45px;
+	font-size: 20px;
+	font-weight: 700;
+	height: 120px;
+	text-align: center;
+	width: 120px;
+	margin: -205px 0 0 80px;
+}
+
+
+.box__curso{
+	text-align: left;
+}
+
+.box__curso p{
+	color: #cccccc;
+}
+
+.box__curso h5{
+	margin-top: 0;
+	font-size: 20px;
+}
+
+.mes{
+	font-size: 20px;
+	font-weight:  bold;
+	color: #333;
+	float: left;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.mes span{
+	border-bottom: 2px solid #CCC;
+	padding-bottom: 5px;
+}
+
+
+.info__curso{
+	background: #FFF;
+	width: 100%;
+	display: table;
+	padding: 10px;
+	table-layout: fixed;
+	border-radius: 4px;
+	margin-bottom: 40px;
+}
+
+.info__curso span{
+	display: table-cell;
+	color: #999;
+}
+
+.info__curso span strong{
+	display: block;
+	color: #333;
+}
+
+
+
+/********************************/
+/*           ACADEMIA           */
+/********************************/
+
+.academia aside{
+	margin-top: -20px;
+}
+
+.grupo-cursos{
+	margin-bottom: 40px;
+}
+
+.cursos-mobile{
+	display: none;
+}
+
+
+.card{
+  color: #e1e1e1;
+  border-radius: 5px;
+  height:230px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+
+.card p{
+  color:#999;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 90%;
+}
+
+.card .front{
+	height: 250px !important;
+  background: #FFF;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+
+
+.card .front .fa{
+	margin-top: 15px;
+	font-size: 24px;
+	color: #EFEFEF;
+}
+
+.card .front h5{
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.card .back{
+	height: 250px !important;
+  background: #6b8dad;
+  border-radius: 2px;
+}
+
+.card .back .container-btn{
+	display: block;
+	padding-top: 10px;
+	clear: both;
+}
+
+.card .back .btn{
+	margin: auto!important;
+	border: 1px solid #FFF;
+	color: #FFF;
+	padding: 2px 5px;
+	border-radius: 0;
+}
+
+
+.card .back h3{
+  margin-top:20px;
+  margin-bottom: 3px;
+  font-size: 16px;
+  color:#fff;
+  text-transform: uppercase;
+}
+
+.card .back  dl{
+  text-align: left;
+  margin-left:7px;
+  margin-top: 20px;
+}
+
+.card .back dt,
+.card .back dd{
+	float: left;
+	display: block!important;
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+
+.card .back dd{
+	clear: right;
+	width: 79px;
+	color: #FFF;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.card .back dt{
+	width: 70px;
+	text-align:  right;
+	padding-right: 5px;
+	font-weight: 100;
+}
+
+.cursos_paneles .card{
+	margin-bottom: 0;
+	height: auto!important;
+}
+
+.cursos_paneles .info__curso{
+	margin-bottom: 25px;
+}
+
+/*CONTACTO*/
+
+.contacto p span{
+	margin-left: 20px;
+}
+
+form{
+	display: none;
+}
+
+
+/*TABLET*/
+
+@media screen and (max-width: 768px){
+	nav{
+		 background: rgba(27,68,150,1);
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+
+	nav .brand {
+	    margin-top: 11px;
+	}
+
+	nav ul li:hover{
+		background: none; 
+	}
+
+	nav ul li{
+		padding: 0;
+	}
+
+	nav ul li a:link,
+	nav ul li a:visited {
+		height: auto;
+	}
+	.hero h2 {
+		margin-top: 250px !important;
+	}
+	footer .logo-footer{
+		display: none;
+	}
+
+	footer .footer-sitemap{
+		display: none;
+	}
+
+	#trigger-menu{
+		display: block;
+	}
+
+	.menu-secundario{
+		width: 100%;
+	}
+
+	.calendario{
+		clear: both;
+	}
+
+	.mision__container{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.detalle .medialuna{
+		width: 240px;
+		height: 240px;
+	}
+
+	.detalle .thumb__ico{
+		margin-left: 45px;
+	}
+
+	.detalle .thumb__ico--gobernabilidad,
+	.detalle .thumb__ico--integridad,
+	.detalle .thumb__ico--cyberseguridad,
+	.detalle .thumb__ico--cyberacademia,
+	.detalle .thumb__ico--crisis,
+	.detalle .thumb__ico--sustentabilidad{
+		background-size: 80%;
+	}
+
+	.grupo-cursos{
+		clear: both;
+	}
+
+	.contenedor__cursos{
+		padding-left: 10px;
+	}
+
+	.mes{
+		margin-bottom: 20px;
+		text-align: left;
+		padding-left: 25px;
+	}
+}
+
+/*PHONE*/
+
+@media screen and (max-width: 500px){
+	iframe {
+		margin-top: 20px;
+	}
+	.botones-curso {
+		 width: 100%;
+		 margin: 0 auto; 
+		 margin-top: 40px;
+	}
+	.botones-curso div {
+		width: 170px !important;
+		margin-bottom: 40px !important;
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.botones-curso {
+		 width: 100%; 
+		 margin: 0 auto; 
+		 margin-top: 40px;
+	}
+	.botones-curso div {
+		width: 130px !important;
+		margin-bottom: 40px !important;
+		font-size: 11px;
+	}
+	nav{
+		 background: rgba(27,68,150,1);
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+
+	nav .brand {
+	    /*width: 25px;*/
+	    background-size: auto;
+	    overflow: hidden;
+	    margin-top: 10px;
+	}
+
+	nav ul li:hover{
+		background: none; 
+	}
+
+	nav ul li{
+		padding: 0;
+	}
+
+	nav ul li a:link,
+	nav ul li a:visited {
+		height: auto;
+	}
+
+	footer .logo-footer{
+		display: none;
+	}
+
+	h4{
+		font-size: 17px;
+	}
+
+	#trigger-menu{
+		display: block;
+	}
+
+
+	.hero{
+		height: 550px;
+	}
+
+	.hero h2 {
+		border:1px solid;
+		width: 100%;
+		font-size: 16px;
+
+		line-height: 170%;
+	}
+
+	.hero h2:before{
+		display: none;
+	}
+
+	.valores{
+		background-size: 100%;
+		background-position: center bottom;
+		padding-top: 20px;
+	}
+
+	.valores-abstract{
+		margin-left: 20px;
+	}
+	
+	.ico__servicio{
+		height: 80px;
+	}
+
+	.ico__servicio--gob,
+	.ico__servicio--seg,
+	.ico__servicio--sust{
+		background-size: 70%;
+	}
+
+	.servicio-item{
+		margin-bottom: 20px;
+	}
+
+	.menu-secundario{
+		width: 100%;
+		clear: both;
+	}
+
+	.menu-secundario h5{
+		margin-top: 0;
+	}
+
+	.detalle .contenido .menu-secundario ul,
+	.detalle .contenido .menu-secundario ul li:last-child{
+		margin-bottom: 0;
+	}
+
+
+
+	.detalle .contenido .destacado{
+		font-size: 20px;
+	}
+
+	.detalle .cenefa__interior{
+		height: 220px;
+	}
+
+	.detalle .cenefa__interior h2{
+		margin-top: 60px;
+	}
+
+	.detalle .medialuna{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -120px;
+		width: 230px;
+		height: 230px;
+	}
+
+	.detalle .img__socio{
+		width: 220px;
+		height: 220px;
+		overflow: hidden;
+		display: block;
+		margin: -234px auto 20px auto;
+		border-radius: 50%;
+		border: 5px solid #EFEFEF;
+	}
+
+	.detalle .img__socio img{
+		margin-left: -25px;
+	}
+
+	.detalle .contenido h4 small{
+		font-size: 14px;
+	}
+
+	.detalle .contenido p{
+		margin-bottom: 10px;
+	}
+
+	.detalle .thumb__ico{
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: -230px;
+	}
+
+	.detalle .thumb__ico--gobernabilidad,
+	.detalle .thumb__ico--integridad,
+	.detalle .thumb__ico--cyberseguridad,
+	.detalle .thumb__ico--cyberacademia,
+	.detalle .thumb__ico--crisis,
+	.detalle .thumb__ico--sustentabilidad{
+		background-size: 95px;
+	}
+
+
+	.detalle.academia aside{
+		display: none;
+	}
+
+
+	.cursos-mobile{
+		display: block;
+		font-size: 12px;
+	}
+
+	.cursos-mobile small{
+		display: block;
+		clear: both;
+		text-transform: uppercase;
+	}
+
+	.container-valores .box-valor{
+		width:100%;
+		float: left;
+		padding-right: 0;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.contacto p span {
+    	margin-left: 0;
+	}
+}
