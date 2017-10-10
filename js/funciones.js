@@ -15,6 +15,41 @@ $(document).ready(function(){
 	});
 
 
+	// SEGUNDO SOCIO
+
+	$("#bio2").click(function(){
+		$(".box2").hide();
+		$("#edu2").removeClass("active");
+		$(".bio2").show();
+		$(this).addClass("active");
+	})
+
+	$("#edu2").click(function(){
+		$(".box2").hide();
+		$("#bio2").removeClass("active");
+		$(".cv2").show();
+		$(this).addClass("active");
+	});
+
+// FIN SEGUNDO SOCIO
+
+// TERCER SOCIO
+
+	$("#bio3").click(function(){
+		$(".box3").hide();
+		$("#edu3").removeClass("active");
+		$(".bio3").show();
+		$(this).addClass("active");
+	})
+
+	$("#edu3").click(function(){
+		$(".box3").hide();
+		$("#bio3").removeClass("active");
+		$(".cv3").show();
+		$(this).addClass("active");
+	});
+
+
 	$("a.external").click(function() {
       url = $(this).attr("href");
       window.open(url, '_blank');

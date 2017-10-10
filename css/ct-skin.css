@@ -11,6 +11,46 @@ body{
 	color: #555;
 }
 
+.membersAside{
+	position: sticky;
+}
+
+.justifiedP{
+	text-align: justify;
+}
+
+
+.centered{
+	text-transform: uppercase; 	
+	text-align: center;
+    color: #1b4e96;
+    font-weight: lighter
+
+   
+}
+.centered2{
+	text-align: center;
+    color: #1b4e96;
+    font-weight: bolder;
+    margin-top: -14px;
+}
+
+.cybertrustSection{
+	background: #090909;
+	
+}
+
+.cybertrustSection p{
+	
+	text-align: justify;
+	margin: 50px;
+}
+
+.cybertrustSection li{
+	list-style-type: none;
+}
+
+
 .container-fluid{
 
 }
@@ -622,11 +662,18 @@ h5 a {
 }
 
 
+.detalle .img__socio1{
+	display: block;
+	margin: -205px 0 0 10px;	
+	width: 240px;
+	height: 507px;
+}
 
 .detalle .img__socio{
 	display: block;
-	margin: -205px 0 0 10px;
-	margin-top: -205px;
+	/*margin: -205px 0 0 10px;*/
+	margin: 0 0 0 10px;
+	/*margin-top: -205px;*/
 	width: 240px;
 	height: 507px;
 }
@@ -680,6 +727,14 @@ h5 a {
 
 
 .detalle .contenido .box.cv{
+	display: none;
+}
+
+.detalle .contenido .box2.cv2{
+	display: none;
+}
+
+.detalle .contenido .box3.cv3{
 	display: none;
 }
 
@@ -831,7 +886,7 @@ h5 a {
 .card{
   color: #e1e1e1;
   border-radius: 5px;
-  height:230px;
+  height:400px;
   margin-bottom: 40px;
   margin-top: 20px;
 }
@@ -846,8 +901,8 @@ h5 a {
   width: 90%;
 }
 
-.card .front{
-	height: 250px !important;
+.card .calendario-descrip{
+	height: 400px !important;
   background: #FFF;
   text-align: center;
   padding-right: 10px;
@@ -856,30 +911,30 @@ h5 a {
 }
 
 
-.card .front .fa{
+.card .calendario-descrip .fa{
 	margin-top: 15px;
 	font-size: 24px;
 	color: #EFEFEF;
 }
 
-.card .front h5{
+.card .calendario-descrip h5{
 	margin-top: 10px;
 	font-size: 16px;
 }
 
-.card .back{
+.card .calendario-horario{
 	height: 250px !important;
   background: #6b8dad;
   border-radius: 2px;
 }
 
-.card .back .container-btn{
+.card .calendario-horario .container-btn{
 	display: block;
 	padding-top: 10px;
 	clear: both;
 }
 
-.card .back .btn{
+.card .calendario-horario .btn{
 	margin: auto!important;
 	border: 1px solid #FFF;
 	color: #FFF;
@@ -888,7 +943,7 @@ h5 a {
 }
 
 
-.card .back h3{
+.card .calendario-horario h3{
   margin-top:20px;
   margin-bottom: 3px;
   font-size: 16px;
@@ -896,21 +951,21 @@ h5 a {
   text-transform: uppercase;
 }
 
-.card .back  dl{
+.card .calendario-horario  dl{
   text-align: left;
   margin-left:7px;
   margin-top: 20px;
 }
 
-.card .back dt,
-.card .back dd{
+.card .calendario-horario dt,
+.card .calendario-horario dd{
 	float: left;
 	display: block!important;
 	margin-bottom: 5px;
 	font-size: 12px;
 }
 
-.card .back dd{
+.card .calendario-horario dd{
 	clear: right;
 	width: 79px;
 	color: #FFF;
@@ -918,7 +973,7 @@ h5 a {
 	margin-left: 5px;
 }
 
-.card .back dt{
+.card .calendario-horario dt{
 	width: 70px;
 	text-align:  right;
 	padding-right: 5px;
@@ -1177,12 +1232,23 @@ form{
 		height: 230px;
 	}
 
+	.detalle .img__socio1{
+		width: 220px;
+		height: 220px;
+		overflow: hidden;
+		display: block;
+		margin: -234px auto 20px auto;		
+		border-radius: 50%;
+		border: 5px solid #EFEFEF;
+	}
+
 	.detalle .img__socio{
 		width: 220px;
 		height: 220px;
 		overflow: hidden;
 		display: block;
-		margin: -234px auto 20px auto;
+		/*margin: -234px auto 20px auto;*/
+		margin: 0 auto 20px auto;
 		border-radius: 50%;
 		border: 5px solid #EFEFEF;
 	}
@@ -1242,4 +1308,10 @@ form{
 	.contacto p span {
     	margin-left: 0;
 	}
+}
+
+
+.calendario-descrip{
+	background-color: white;
+	width: 176px;
 }
