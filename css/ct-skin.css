@@ -19,6 +19,10 @@ body{
 	text-align: justify;
 }
 
+.fluid-container.contenido.academyWidth{
+	padding-bottom: 0;
+    padding-top: 0;
+}
 
 .centered{
 	text-transform: uppercase; 	
