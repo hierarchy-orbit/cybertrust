@@ -115,12 +115,14 @@ top: 351px;
     border-right: 3px solid #efe9e9;
 }
 .superHat{
-	width:100px;
-	height: 50px;
-	background-color: black;
-	position: absolute;
-    left: 25%;
-    top: -6%;
+    width: 152px;
+    height: 76px;
+    background-color: black;
+    position: absolute;
+    left: 13%;
+    top: -18%;
+    border-radius: 15px;
+    z-index: 999;
    }
 
 .mini-perfil {
