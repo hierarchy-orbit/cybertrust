@@ -59,6 +59,70 @@ body{
 
 }
 
+.divsMainServices{
+	width: 208px;
+	height: 417px;
+	border-radius: 25px;
+	background-color:#367DB4;
+	display: inline-block;
+	margin-right: 6px;
+	position: relative;
+
+}
+
+
+.whiteStripe{
+width: 100%;
+background-color:#efe9e9;
+height: 15px;
+position: absolute;
+top: 120px;
+}
+
+.whiteStripe.dos{
+width: 100%;
+background-color:#efe9e9;
+height: 15px;
+position: absolute;
+top: 334px;
+}
+
+.whiteStripe.tres{
+width: 100%;
+background-color:#efe9e9;
+height: 15px;
+position: absolute;
+top: 368px;
+}
+
+.whiteStripe.cuatro{
+width: 100%;
+background-color:#efe9e9;
+height: 15px;
+position: absolute;
+top: 351px;
+}
+
+.hat{
+	width:100px;
+	height: 100px;
+	background-color: black;
+	position: absolute;
+    left: 25%;
+    top: -6%;
+    border-bottom: 3px solid #efe9e9 ;
+    border-left: 3px solid #efe9e9;
+    border-right: 3px solid #efe9e9;
+}
+.superHat{
+	width:100px;
+	height: 50px;
+	background-color: black;
+	position: absolute;
+    left: 25%;
+    top: -6%;
+   }
+
 .mini-perfil {
 	width: 50px; 
 	border-radius: 50%;
