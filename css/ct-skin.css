@@ -59,9 +59,24 @@ body{
 
 }
 
+.divsMainServicesComplete{
+	width: 208px;
+	height: 500px;
+	border-radius: 25px;
+	display: inline-block;
+	margin-right: 6px;
+	position: relative;
+	padding-top: 20px;
+
+}
+
+.contenidoServices {
+	padding-top: 0!important;
+}
+
 .divsMainServices{
 	width: 208px;
-	height: 417px;
+	height: 470px;
 	border-radius: 25px;
 	background-color:#367DB4;
 	display: inline-block;
@@ -76,7 +91,7 @@ width: 100%;
 background-color:#efe9e9;
 height: 15px;
 position: absolute;
-top: 120px;
+top: 135px;
 }
 
 .whiteStripe.dos{
@@ -84,7 +99,7 @@ width: 100%;
 background-color:#efe9e9;
 height: 15px;
 position: absolute;
-top: 334px;
+top: 80%;
 }
 
 .whiteStripe.tres{
@@ -92,7 +107,7 @@ width: 100%;
 background-color:#efe9e9;
 height: 15px;
 position: absolute;
-top: 368px;
+top: 85%;
 }
 
 .whiteStripe.cuatro{
@@ -100,7 +115,7 @@ width: 100%;
 background-color:#efe9e9;
 height: 15px;
 position: absolute;
-top: 351px;
+top: 90%;
 }
 
 .hat{
@@ -118,12 +133,84 @@ top: 351px;
     width: 152px;
     height: 76px;
     background-color: black;
-    position: absolute;
+    position: relative;
     left: 13%;
-    top: -18%;
     border-radius: 15px;
     z-index: 999;
    }
+
+   .paragraphHat {
+   	position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 83px;
+    line-height: 14px!important;
+    font-weight: bold;
+    padding: 0 10px;
+   }
+
+   .mainInternalDivs{
+ 	width: 190px;
+    height: 36px;
+    background-color: black;
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    border-radius: 15px;
+    z-index: 999;
+   }
+
+   .mainInternalDivs2{
+ 	width: 190px;
+    height: 36px;
+    background-color: black;
+    position: absolute;
+    left: 5%;
+    top: 46%;
+    border-radius: 15px;
+    z-index: 999;
+   }
+
+    .mainInternalDivs3{
+ 	width: 190px;
+    height: 36px;
+    background-color: black;
+    position: absolute;
+    left: 5%;
+    top: 58%;
+    border-radius: 15px;
+    z-index: 999;
+   }
+
+    .mainInternalDivs4{
+ 	width: 190px;
+    height: 36px;
+    background-color: black;
+    position: absolute;
+    left: 5%;
+    top: 69%;
+    border-radius: 15px;
+    z-index: 999;
+   }
+
+   .mainInternalDivsText{
+   	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	   -moz-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	     -o-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+	        margin:0;
+	        color: white;
+	        font-weight: bold;
+	        line-height: 16px!important;
+    		display: table;
+	font-size: smaller;
+   }
+
+
 
   .superhatText{
 	position: absolute;
@@ -139,6 +226,8 @@ top: 351px;
 	        font-weight: bold;
 	        line-height: 16px!important;
     		display: table;
+    font-size: 12px;
+    padding: 0 10px;
   }
 
   .superhatImg{
