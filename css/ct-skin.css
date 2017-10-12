@@ -28,7 +28,8 @@ body{
 	text-transform: uppercase; 	
 	text-align: center;
     color: #1b4e96;
-    font-weight: lighter
+    font-weight: lighter;
+    line-height: 31px;
 
    
 }
@@ -842,6 +843,11 @@ h5 a {
 
 .detalle .thumb__ico--crisis{
 	background: url(../img/iconos/ico-crisis.svg) no-repeat center center;
+	background-size: 100%;
+}
+
+.detalle .thumb__ico--cybertrust{
+	background: url(../img/logos/Logo_Cybertrust_y_Center_01.png) no-repeat center center;
 	background-size: 100%;
 }
 
