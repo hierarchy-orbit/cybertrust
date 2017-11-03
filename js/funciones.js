@@ -50,23 +50,23 @@ $(document).ready(function(){
 	});
 
 
-	$("a.external").click(function() {
-      url = $(this).attr("href");
-      window.open(url, '_blank');
-      return false;
-   });
 
 	$('#trigger-menu').on('click', function(){
 		$('#menu-mobile').toggleClass('activo');
 	});
 
 
-	$(".card").flip({
+	/*$(".card").flip({
 	  axis: "y",
 	  reverse: true,
 	  trigger: "hover",
 	  speed:500
-	});
+	});*/
+
+	setTimeout(function(){ 
+		$(".form").css("display","none");}, 22000);
+
+	
 
 });
 
