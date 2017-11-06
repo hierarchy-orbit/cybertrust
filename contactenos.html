@@ -27,11 +27,12 @@
 					<li>
 						<a href="acerca-de-cybertrust.html">Nuestra Empresa</a>
 						<a href="servicios-gobernabilidad.html">Servicios</a>
-						<a href="academia-calendario-cursos.html">Academia</a>
+						<a href="academia-calendario-cursos.html">Calendario</a>
 						<a href="contactenos.html">Contáctenos</a>
 					</li>
 				</ul>
 			</div>
+			
 		<ul class="pull-right hidden-xs hidden-sm">
 			<li><a href="acerca-de-cybertrust.html" id="empresa">Nuestra Empresa</a>
 				<ul class="submenu">
@@ -42,15 +43,16 @@
 			</li>
 			<li><a href="servicios-gobernabilidad.html">Servicios</a>
 				<ul class="submenu">
-					<li><a href="servicios-gobernabilidad.html">Gobernabilidad, Auditoría y Gestión de Fraude</a></li>
-					<li><a href="servicios-integridad.html">Integridad de Aplicaciones</a></li>
-					<li><a href="servicios-cyberseguridad.html">CyberSeguridad</a></li>
-					<li><a href="servicios-cyberacademia.html">CyberAcademia</a></li>
-					<li><a href="servicios-crisis.html">Crisis Management y Resiliencia</a></li>
-					<li><a href="servicios-cybertrustcenter.html">Cybertrust Center</a></li>					
-				</ul>
+					<li><a href="servicios-gobernabilidad.html">Governances, Audit & Fraud Management</span></a></li>
+					<li><a href="servicios-integridad.html">Application  Integrity</span></a></li>
+					<li><a href="servicios-cyberseguridad.html">Information Security & Cybersecurity</span></a></li>
+					<li><a href="servicios-cyberacademia.html">Cybertrust Academy</a></li>
+					<li><a href="servicios-crisis.html">Crisis Management, Business Continuity & Resilience</a></li><br>
+					<li><a href="servicios-cybertrustcenter.html">Cybertrust Center</a></li>		
+				</ul>							
+
 			</li>
-			<li><a href="academia-calendario-cursos.html">Academia</a></li>
+			<li><a href="academia-calendario-cursos.html">Calendario</a></li>
 			<li class="active"><a href="contactenos.html">CONTÁCTENOS</a></li>
 		</ul>
 	</nav>
@@ -61,50 +63,70 @@
 
 	<section class="container-fluid contenido" style="padding-bottom: 0px">
 		<div class="row">
-			<div class="col-md-10 col-md-offset-1 text-center">
+			<div class="col-md-10 col-md-offset-1 text-center down">
 				<p class="bajada wow fadeInUp">
 				Av. Apoquindo 4775, Piso 3 - Las Condes, Santiago de Chile.<br/>
 					Teléfonos: <a href="tel:+56232243551">+562 3224 3551</a> <a href="tel:+56232243552">+562 3224 3552</a><br class="visible-xs"/><span>Email:</span> <a href="mailto:contacto@cybertrust.cl">contacto@cybertrust.cl</a>
-				<script type="text/javascript" src="https://form.jotformz.com/jsform/61875133134655"></script>
+				<!-- <script type="text/javascript" src="https://form.jotformz.com/jsform/61875133134655"></script> -->
 				</p>
 			</div>
-			<form action="">
-				<div class="col-md-6 col-md-offset-1">
-						<p class="form-group col-md-6">
-							<label for="nombre">Nombre</label>
-							<input id="nombre" type="text" class="form-control" />
-						</p>
-						<p class="form-group col-md-6">
-							<label for="email">Email</label>
-							<input id="email" type="text" class="form-control" />
-						</p>
-						<p class="form-group col-md-6">
-							<label for="telefono">Teléfono</label>
-							<input id="telefono" type="text" class="form-control" />
-						</p>
-						<p class="form-group col-md-6">
-							<label for="empresa">Empresa</label>
-							<input id="empresa" type="text" class="form-control" />
-						</p>
-						<p class="form-group  col-md-12">
-							<label for="curso">Curso de Interés</label>
-							<select name="curso" id="curso" class="form-control">
-								<option value="Seleccione" selected="selected">Seleccione un curso</option>
-								<option value=""></option>
-							</select>
-						</p>
-						<p class="form-group col-md-12">
-							<label for="nombre">Comentario</label>
-							<textarea id="nombre" type="text" class="form-control" rows="5" /></textarea>
-						</p>
-						<p class="col-md-12">
-							<input class="btn btn-default pull-right" type="submit" value="Enviar" />
-						</p>
-				</div>
 
+			<div class="container  col-md-offset-3" >
 
-			</form>
-		</div>
+				<form action="contactenos.php" method="POST">
+
+					<div class="col-md-6 col-md-offset-1">
+
+						<div class="row">	
+							<p class="form-group col-md-4">
+								<label for="nombre">Nombre</label>
+								<input id="nombre" type="text" name= "nombre" class="form-control" placeholder="Nombre"  />
+							</p>
+					
+							<p class="form-group col-md-4">
+								<label for="apellido">Apellido</label>
+								<input id="apellido" type="text" name="apellido" class="form-control" placeholder="Apellido"/>
+							</p>
+						</div>
+
+						<div class="row">
+							<p class="form-group col-md-8">
+								<label for="email">Correo Electrónico</label>
+								<input id="email" type="email" name="email" class="form-control" placeholder="a@example.com" />
+							</p>
+						</div>
+
+						<div class="row">
+							<p class="form-group col-md-6">
+								<label for="telefono">Número de Teléfono</label>
+								<input id="telefono" type="text" name="telefono" class="form-control" />
+							</p>
+						</div>
+
+						<div class="row">
+							<p class="form-group col-md-6">
+								<label for="empresa">Empresa</label>
+								<input id="empresa" type="text" name="empresa" class="form-control" />
+							</p>
+						</div>
+
+						<div class="row">
+							<p class="form-group col-md-12">
+								<label for="nombre">Comentario</label>
+								<textarea id="nombre" type="text" name="comentario" class="form-control" rows="5" /></textarea>
+							</p>
+						</div>
+
+						<div class="row">
+							<p class="col-md-12">
+								<input class="btn btn-default pull-right" type="submit" value="Enviar" />
+							</p>
+						</div>
+
+					</div>
+
+				</form>
+			</div>
 
 	</section>
 
@@ -125,6 +147,7 @@
 			<a href="https://www.linkedin.com/company/cybertrust-spa" target="_blank"><img src="img/linkedin.png" width=50></a>
 		</div>
 		<div class="col-md-7 footer-sitemap hidden-xs">
+
 			<ul>
 				<li class="titulo-seccion">NUESTRA EMPRESA</li>
 				<li><a href="acerca-de-cybertrust.html">Acerca de Cybertrust</a></li>
@@ -132,13 +155,15 @@
 				<li><a href="socios-cybertrust.html">Socios</a></li>
 			</ul>
 			<ul>
-				<li class="titulo-seccion">SERVICIOS</li>
-				<li><a href="servicios-gobernabilidad.html">Gobernabilidad, Auditoría y Administración de Fraude</a></li>
-				<li><a href="servicios-integridad.html">Integridad de Aplicaciones</a></li>
-				<li><a href="servicios-cyberseguridad.html">CyberSeguridad</a></li>
-				<li><a href="servicios-cyberacademia.html">CyberAcademia</a></li>
-				<li><a href="servicios-crisis.html">Crisis Management y Resiliencia</a></li>
-				<li><a href="servicios-cybertrustcenter.html">Cybertrust Center</a></li>					
+				<li class="titulo-seccion">SERVICIOS</li>				<li class="titulo-seccion">SERVICIOS</li>
+				<li><a href="servicios-gobernabilidad.html">Governances, Audit & Fraud Management</a></li>
+				<li><a href="servicios-integridad.html">Application Integrity</a></li>
+				<li><a href="servicios-cyberseguridad.html">Information Security & Cybersecurity</a></li>
+				<li><a href="servicios-cyberacademia.html">Cybertrust Academy</a></li>
+				<li><a href="servicios-crisis.html">Crisis Management, Business Continuity & Resilience</a></li>
+				<li><a href="servicios-cybertrustcenter.html">Cybertrust Center</a></li>
+
+					
 			</ul>
 		</div>
 	</footer>

@@ -11,6 +11,10 @@ body{
 	color: #555;
 }
 
+.down{
+	margin-bottom: 1.5%;
+}
+
 .membersAside{
 	position: sticky;
 }
@@ -58,6 +62,20 @@ body{
 	list-style-type: none;
 }
 
+.newAcademyLogo{
+	width: 240px;
+    height: 240px;
+    display: block;
+    margin-top: -88%;
+    margin-left: 5%!important;
+}
+
+
+.ricardo{
+	position: relative;
+	top:30px;
+}
+
 
 .container-fluid{
 
@@ -82,14 +100,17 @@ body{
 	width: 208px;
 	height: 470px;
 	border-radius: 25px;
-	background-color:#367DB4;
+	background-color:#4AB1D7;
 	display: inline-block;
 	margin-right: 6px;
 	position: relative;
 
 }
 
+.whiteStripeText{
+	margin:0 auto;
 
+}
 .whiteStripe{
 width: 100%;
 background-color:#efe9e9;
@@ -104,6 +125,7 @@ background-color:#efe9e9;
 height: 15px;
 position: absolute;
 top: 80%;
+text-align: center
 }
 
 .whiteStripe.tres{
@@ -125,7 +147,7 @@ top: 90%;
 .hat{
 	width:100px;
 	height: 100px;
-	background-color: black;
+	background-color: #113B56;
 	position: absolute;
     left: 25%;
     top: -6%;
@@ -136,7 +158,7 @@ top: 90%;
 .superHat{
     width: 152px;
     height: 76px;
-    background-color: black;
+    background-color: #113B56;
     position: relative;
     left: 13%;
     border-radius: 15px;
@@ -156,7 +178,7 @@ top: 90%;
    .mainInternalDivs{
  	width: 190px;
     height: 46px;
-    background-color: black;
+    background-color: #113B56;
     position: absolute;
     left: 5%;
     top: 35%;
@@ -167,7 +189,7 @@ top: 90%;
    .mainInternalDivs2{
  	width: 190px;
     height: 51px;
-    background-color: black;
+    background-color: #113B56;
     position: absolute;
     left: 5%;
     top: 46%;
@@ -178,7 +200,7 @@ top: 90%;
     .mainInternalDivs3{
  	width: 190px;
     height: 48px;
-    background-color: black;
+    background-color: #113B56;
     position: absolute;
     left: 5%;
     top: 58%;
@@ -189,7 +211,7 @@ top: 90%;
     .mainInternalDivs4{
  	width: 190px;
     height: 49px;
-    background-color: black;
+    background-color: #113B56;
     position: absolute;
     left: 5%;
     top: 69%;
@@ -253,6 +275,7 @@ top: 90%;
 	margin-right: 5px;
 }
 
+
 #trigger-menu {
     padding: 5px 10px;
     color: #28b7e1;
@@ -309,6 +332,8 @@ nav{
 .submenu, .footer-sitemap ul {
 	text-transform: none;
 }
+
+
 
 /*ul:not(.submenu):not(.footer-sitemap ul) > li {
 	text-transform: uppercase;
@@ -658,9 +683,31 @@ h5 a {
 	background-size: 100%;
 }
 
-.ico__servicio--acad{
-	background: url(../img/iconos/ico-cyberacademia.svg) no-repeat center center;
+.ico__servicio--int{
+	background: url(../img/iconos/ico-integridad.svg) no-repeat center center;
 	background-size: 100%;
+	width: 175px;
+    height: 129px;
+    width: 63%!important;
+}
+
+.ico__servicio--acad{
+	background: url(../img/iconos/ico-cyberacademia.png) no-repeat center center;
+	background-size: 100%;
+	width: 88%;
+}
+
+.ico__servicio--cyb{
+	background: url(../img/logos/logo_cybertrust.png) no-repeat center center;
+	background-size: 135%;
+	object-fit: contain;
+/*	width: 175px;
+    height: 129px;*/
+}
+
+.homeLogos{
+	position: relative;
+    left: 8%;
 }
 
 .servicios h2,
@@ -687,6 +734,7 @@ h5 a {
 
 .valores-abstract .container-btn{
 	text-align: left;
+
 }
 
 
@@ -842,8 +890,10 @@ h5 a {
 }
 
 .detalle .thumb__ico--cyberacademia{
-	background: url(../img/iconos/ico-cyberacademia.svg) no-repeat center center;
-	background-size: 100%;
+	background: url(../img/iconos/ico-cyberacademia.png) no-repeat center center;
+	background-size: 135%;
+	object-fit: contain;
+	
 }
 
 .detalle .thumb__ico--crisis{
@@ -1190,9 +1240,9 @@ h5 a {
 	margin-left: 20px;
 }
 
-form{
+/*form{
 	display: none;
-}
+}*/
 
 
 /*TABLET*/
@@ -1261,10 +1311,13 @@ form{
 	.detalle .thumb__ico--gobernabilidad,
 	.detalle .thumb__ico--integridad,
 	.detalle .thumb__ico--cyberseguridad,
-	.detalle .thumb__ico--cyberacademia,
 	.detalle .thumb__ico--crisis,
 	.detalle .thumb__ico--sustentabilidad{
 		background-size: 80%;
+	}
+
+	.detalle .thumb__ico--cyberacademia{
+		background-size: 100%
 	}
 
 	.grupo-cursos{
@@ -1281,6 +1334,7 @@ form{
 		padding-left: 25px;
 	}
 }
+
 
 /*PHONE*/
 
@@ -1469,10 +1523,13 @@ form{
 	.detalle .thumb__ico--gobernabilidad,
 	.detalle .thumb__ico--integridad,
 	.detalle .thumb__ico--cyberseguridad,
-	.detalle .thumb__ico--cyberacademia,
 	.detalle .thumb__ico--crisis,
 	.detalle .thumb__ico--sustentabilidad{
 		background-size: 95px;
+	}
+
+	.detalle .thumb__ico--cyberacademia{
+		background-size: 100px;
 	}
 
 
