@@ -9,6 +9,12 @@ body{
 	background: #efe9e9;
 	font: 14px "Lato", sans-serif;
 	color: #555;
+	 overflow-x: hidden;
+}
+
+.theMap{
+width: 100%;
+ height: auto;
 }
 
 .down{
@@ -261,6 +267,14 @@ top: 90%;
     top: 58%;
     left: 50%;
     transform: translate(-50%,-50%);
+  }
+
+  .front>dt{
+  	color:black;
+  }
+
+    .back>dt{
+  	color:black;
   }
 
 .box-valor>p{
@@ -597,6 +611,24 @@ h5 a {
 	    -ms-transition: all .25s ease-in-out 0s;
 	     -o-transition: all .25s ease-in-out 0s;
 	        transition: all .25s ease-in-out 0s;
+	        position: relative;
+	        left: 50%;
+	        bottom: 0;
+}
+
+.btn-ver-mas2{
+	color: #7b89a2;
+	border-color: #7b89a2;
+	font: 12px "Montserrat";
+	border-radius: 0;
+	-webkit-transition: all .25s ease-in-out 0s;
+	   -moz-transition: all .25s ease-in-out 0s;
+	    -ms-transition: all .25s ease-in-out 0s;
+	     -o-transition: all .25s ease-in-out 0s;
+	        transition: all .25s ease-in-out 0s;
+	        position: relative;
+	        left: 48%;
+	        bottom: 0;
 }
 
 .btn-ver-mas:hover,
@@ -642,7 +674,7 @@ h5 a {
 	content: "";
 	width: 60px;
 	margin: 30px auto;
-	border-bottom: 1px solid #9eb4c9;
+	border: 1px solid #9eb4c9;
 	display: block;
 }
 
@@ -674,35 +706,30 @@ h5 a {
 }
 
 .ico__servicio--gob{
-	background: url(../img/iconos/ico-gobernabilidad.svg) no-repeat center center;
+	background: url(../img/iconos/gobernabilidad.png) no-repeat center center;
 	background-size: 100%;
 }
 
 .ico__servicio--seg{
-	background: url(../img/iconos/ico-cyberseguridad.svg) no-repeat center center;
+	background: url(../img/iconos/ciberseguridad.png) no-repeat center center;
 	background-size: 100%;
 }
 
 .ico__servicio--int{
-	background: url(../img/iconos/ico-integridad.svg) no-repeat center center;
+	background: url(../img/iconos/integridad.png) no-repeat center center;
 	background-size: 100%;
-	width: 175px;
-    height: 129px;
-    width: 63%!important;
 }
 
 .ico__servicio--acad{
-	background: url(../img/iconos/ico-cyberacademia.png) no-repeat center center;
+	background: url(../img/iconos/academia.png) no-repeat center center;
 	background-size: 100%;
-	width: 88%;
+
 }
 
 .ico__servicio--cyb{
-	background: url(../img/logos/logo_cybertrust.png) no-repeat center center;
-	background-size: 135%;
-	object-fit: contain;
-/*	width: 175px;
-    height: 129px;*/
+	background: url(../img/iconos/cybertrustcenter.png) no-repeat center center;
+	background-size: 100%;
+
 }
 
 .homeLogos{
@@ -870,30 +897,28 @@ h5 a {
 }
 
 .detalle .thumb__ico--gobernabilidad{
-	background: url(../img/iconos/ico-gobernabilidad.svg) no-repeat center center;
+	background: url(../img/iconos/gobernabilidad.png) no-repeat center center;
 	background-size: 100%;
 }
 
 .detalle .thumb__ico--cyberseguridad{
-	background: url(../img/iconos/ico-cyberseguridad.svg) no-repeat center center;
+	background: url(../img/iconos/ciberseguridad.png) no-repeat center center;
 	background-size: 100%;
 }
 
 .detalle .thumb__ico--sustentabilidad{
-	background: url(../img/iconos/ico-sustentabilidad.svg) no-repeat center center;
+	background: url(../img/iconos/sustentabilidad.png) no-repeat center center;
 	background-size: 100%;
 }
 
 .detalle .thumb__ico--integridad{
-	background: url(../img/iconos/ico-integridad.svg) no-repeat center center;
+	background: url(../img/iconos/integridad.png) no-repeat center center;
 	background-size: 100%;
 }
 
 .detalle .thumb__ico--cyberacademia{
-	background: url(../img/iconos/ico-cyberacademia.png) no-repeat center center;
-	background-size: 135%;
-	object-fit: contain;
-	
+	background: url(../img/iconos/academia.png) no-repeat center center;	
+	background-size: 90%;
 }
 
 .detalle .thumb__ico--crisis{
@@ -902,7 +927,7 @@ h5 a {
 }
 
 .detalle .thumb__ico--cybertrust{
-	background: url(../img/logos/Logo_Cybertrust_y_Center_01.png) no-repeat center center;
+	background: url(../img/logos/cybertrustcenter.png) no-repeat center center;
 	background-size: 100%;
 }
 
@@ -1129,7 +1154,7 @@ h5 a {
 
 
 .card{
-  color: #e1e1e1;
+  
   border-radius: 5px;
   height:400px;
   margin-bottom: 40px;
@@ -1436,10 +1461,22 @@ h5 a {
 	}
 
 	.ico__servicio--gob,
-	.ico__servicio--seg,
-	.ico__servicio--sust{
+	.ico__servicio--seg{
 		background-size: 70%;
 	}
+
+				/*	.ico__servicio--acad{
+						background-size: 135%!important;
+
+						or transform: scale(1.4,1.4);
+					}
+					
+					.ico__servicio--cyb{
+						background-size: 135%!important;
+
+						or transform: scale(1.4,1.4);
+					}
+				*/
 
 	.servicio-item{
 		margin-bottom: 20px;
